@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -76,10 +78,13 @@ class _LoginPageState extends State<LoginPage> {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
       try {
+        // ignore: unused_local_variable
         UserCredential userCredential = await _auth.signInWithEmailAndPassword(
             email: _email, password: _password);
+        // ignore: use_build_context_synchronously
         Navigator.pushReplacementNamed(context, '/home');
       } catch (e) {
+        // ignore: avoid_print
         print(e.toString());
       }
     }
