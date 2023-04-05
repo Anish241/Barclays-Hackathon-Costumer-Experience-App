@@ -72,37 +72,39 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
-              //Here you place your menu items
-              ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home Page', style: TextStyle(fontSize: 18)),
-                onTap: () {
-                  // Here you can give your route to navigate
-                },
-              ),
-              Divider(height: 3.0),
-              ListTile(
-                leading: Icon(Icons.settings),
-                title: Text('Settings', style: TextStyle(fontSize: 18)),
-                onTap: () {
-                  // Here you can give your route to navigate
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.close),
-                title: Text('Close Drawer', style: TextStyle(fontSize: 18)),
-                onTap: () {
-                  // Here you can give your route to navigate
-                  Navigator.of(context).pop();
-                },
-              ),
-            ],
-          ),
-        ),
-        body: SingleChildScrollView(
-          child: Scene(),
-        ),
-      ),
-    );
-  }
+						//Here you place your menu items
+						ListTile(
+							leading: Icon(Icons.home),
+							title: Text('Home Page', style: TextStyle(fontSize: 18)),
+							onTap: () {
+								// Here you can give your route to navigate
+
+							},
+						),
+						Divider(height: 3.0),
+						ListTile(
+							leading: Icon(Icons.settings),
+							title: Text('Settings', style: TextStyle(fontSize: 18)),
+							onTap: () {
+								// Here you can give your route to navigate
+
+							},
+						),
+						ListTile(
+							leading: Icon(Icons.close),
+							title: Text('Close Drawer', style: TextStyle(fontSize: 18)),
+							onTap: () {
+								// Here you can give your route to navigate
+								Navigator.of(context).pop();
+							},
+						),
+					],
+				),
+			),
+		body: SingleChildScrollView(
+			child: Scene(),
+		),
+		),
+	);
+	}
 }
