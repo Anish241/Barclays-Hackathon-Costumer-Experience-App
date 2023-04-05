@@ -13,8 +13,8 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // offers1nG (4:70)
-        padding: EdgeInsets.fromLTRB(0*fem, 78*fem, 0*fem, 85*fem),
+        // offerse1e (7:150)
+        padding: EdgeInsets.fromLTRB(20*fem, 78*fem, 24*fem, 85*fem),
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xfff5f5f5),
@@ -23,8 +23,8 @@ class Scene extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // offersEHe (4:114)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 240*fem, 47*fem),
+              // offersQYY (7:194)
+              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 236*fem, 47*fem),
               child: Text(
                 'Offers',
                 style: SafeGoogleFont (
@@ -38,8 +38,8 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // frame65ZA (4:73)
-              margin: EdgeInsets.fromLTRB(23*fem, 0*fem, 25*fem, 6*fem),
+              // frame6DVz (7:153)
+              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 1*fem, 6*fem),
               padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
               width: double.infinity,
               height: 76*fem,
@@ -51,14 +51,14 @@ class Scene extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // group1kQQ (4:74)
+                    // group14Fi (7:154)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 68*fem, 0*fem),
                     height: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // mcdonaldsGde (4:75)
+                          // mcdonaldsAZe (7:155)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                           child: Text(
                             'McDonald\'s',
@@ -72,7 +72,7 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          // minimumpurchaseofrs3001je (4:76)
+                          // minimumpurchaseofrs300J3a (7:156)
                           'Minimum purchase of Rs.300',
                           style: SafeGoogleFont (
                             'Rubik',
@@ -87,7 +87,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    // offw7W (4:77)
+                    // offom2 (7:157)
                     '10% OFF',
                     textAlign: TextAlign.right,
                     style: SafeGoogleFont (
@@ -102,237 +102,8 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupvuqgtHe (tmPiAXaVm3YcYpfmTVUQg)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 25*fem, 6*fem),
-              width: double.infinity,
-              height: 240*fem,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    // ellipse8bxk (4:71)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 20*fem, 16*fem),
-                    width: 200*fem,
-                    height: 200*fem,
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(100*fem),
-                      color: Color(0x4c2fcafb),
-                    ),
-                  ),
-                  Container(
-                    // autogroup3k7jL9e (tmPvKqyvksDEpqJYu3k7J)
-                    width: 330*fem,
-                    height: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Container(
-                          // frame6fxc (4:79)
-                          margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 0*fem),
-                          padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
-                          width: double.infinity,
-                          height: 76*fem,
-                          decoration: BoxDecoration (
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(16*fem),
-                          ),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // group1xgp (4:80)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 64*fem, 0*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      // zarahPW (4:81)
-                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-                                      child: Text(
-                                        'ZARA',
-                                        style: SafeGoogleFont (
-                                          'Rubik',
-                                          fontSize: 16*ffem,
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.185*ffem/fem,
-                                          color: Color(0xff000000),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      // minimumpurchaseofrs1300ay6 (4:82)
-                                      'Minimum purchase of Rs.1300',
-                                      style: SafeGoogleFont (
-                                        'Rubik',
-                                        fontSize: 14*ffem,
-                                        fontWeight: FontWeight.w300,
-                                        height: 1.185*ffem/fem,
-                                        letterSpacing: 0.28*fem,
-                                        color: Color(0xff848484),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                // offWLx (4:83)
-                                '15% OFF',
-                                textAlign: TextAlign.right,
-                                style: SafeGoogleFont (
-                                  'Rubik',
-                                  fontSize: 10*ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.185*ffem/fem,
-                                  color: Color(0xff000000),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          height: 6*fem,
-                        ),
-                        Container(
-                          // frame62q6 (4:85)
-                          margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 0*fem),
-                          padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
-                          width: double.infinity,
-                          height: 76*fem,
-                          decoration: BoxDecoration (
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(16*fem),
-                          ),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // group1vfa (4:86)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 68*fem, 0*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      // lifestyleft4 (4:87)
-                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-                                      child: Text(
-                                        'Lifestyle',
-                                        style: SafeGoogleFont (
-                                          'Rubik',
-                                          fontSize: 16*ffem,
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.185*ffem/fem,
-                                          color: Color(0xff000000),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      // minimumpurchaseofrs200C7J (4:88)
-                                      'Minimum purchase of Rs.200',
-                                      style: SafeGoogleFont (
-                                        'Rubik',
-                                        fontSize: 14*ffem,
-                                        fontWeight: FontWeight.w300,
-                                        height: 1.185*ffem/fem,
-                                        letterSpacing: 0.28*fem,
-                                        color: Color(0xff848484),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                // offi5e (4:89)
-                                '10% OFF',
-                                textAlign: TextAlign.right,
-                                style: SafeGoogleFont (
-                                  'Rubik',
-                                  fontSize: 10*ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.185*ffem/fem,
-                                  color: Color(0xff000000),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          height: 6*fem,
-                        ),
-                        Container(
-                          // frame6Rkk (4:91)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 0*fem),
-                          padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
-                          width: double.infinity,
-                          height: 76*fem,
-                          decoration: BoxDecoration (
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(16*fem),
-                          ),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // group189N (4:92)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      // accesoriesGWU (4:93)
-                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-                                      child: Text(
-                                        'Accesories',
-                                        style: SafeGoogleFont (
-                                          'Rubik',
-                                          fontSize: 16*ffem,
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.185*ffem/fem,
-                                          color: Color(0xff000000),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      // minimumpurchaseofrs20000zhN (4:94)
-                                      'Minimum purchase of Rs.20000',
-                                      style: SafeGoogleFont (
-                                        'Rubik',
-                                        fontSize: 14*ffem,
-                                        fontWeight: FontWeight.w300,
-                                        height: 1.185*ffem/fem,
-                                        letterSpacing: 0.28*fem,
-                                        color: Color(0xff848484),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                // off8Hn (4:95)
-                                '25% OFF',
-                                textAlign: TextAlign.right,
-                                style: SafeGoogleFont (
-                                  'Rubik',
-                                  fontSize: 10*ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.185*ffem/fem,
-                                  color: Color(0xff000000),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              // frame6foW (4:97)
-              margin: EdgeInsets.fromLTRB(23*fem, 0*fem, 25*fem, 6*fem),
+              // frame6vqe (7:159)
+              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 1*fem, 6*fem),
               padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
               width: double.infinity,
               height: 76*fem,
@@ -344,17 +115,17 @@ class Scene extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // group1Ztt (4:98)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 67*fem, 0*fem),
+                    // group1cTa (7:160)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 64*fem, 0*fem),
                     height: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // kfchkC (4:99)
+                          // zaraLuN (7:161)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                           child: Text(
-                            'KFC',
+                            'ZARA',
                             style: SafeGoogleFont (
                               'Rubik',
                               fontSize: 16*ffem,
@@ -365,8 +136,8 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          // minimumpurchaseofrs500pZv (4:100)
-                          'Minimum purchase of Rs.500',
+                          // minimumpurchaseofrs1300FWY (7:162)
+                          'Minimum purchase of Rs.1300',
                           style: SafeGoogleFont (
                             'Rubik',
                             fontSize: 14*ffem,
@@ -380,8 +151,8 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    // offkCg (4:101)
-                    '20% OFF',
+                    // offMZa (7:163)
+                    '15% OFF',
                     textAlign: TextAlign.right,
                     style: SafeGoogleFont (
                       'Rubik',
@@ -395,8 +166,8 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // frame6HyJ (4:103)
-              margin: EdgeInsets.fromLTRB(23*fem, 0*fem, 25*fem, 6*fem),
+              // frame6Hy2 (7:165)
+              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 1*fem, 6*fem),
               padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
               width: double.infinity,
               height: 76*fem,
@@ -408,17 +179,17 @@ class Scene extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // group1oAx (4:104)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
+                    // group1PFN (7:166)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 68*fem, 0*fem),
                     height: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // louisvuittonwY4 (4:105)
+                          // lifestyle7SG (7:167)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                           child: Text(
-                            'Louis Vuitton',
+                            'Lifestyle',
                             style: SafeGoogleFont (
                               'Rubik',
                               fontSize: 16*ffem,
@@ -429,7 +200,71 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          // minimumpurchaseofrs20000fU4 (4:106)
+                          // minimumpurchaseofrs2002ZE (7:168)
+                          'Minimum purchase of Rs.200',
+                          style: SafeGoogleFont (
+                            'Rubik',
+                            fontSize: 14*ffem,
+                            fontWeight: FontWeight.w300,
+                            height: 1.185*ffem/fem,
+                            letterSpacing: 0.28*fem,
+                            color: Color(0xff848484),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    // offkVE (7:169)
+                    '10% OFF',
+                    textAlign: TextAlign.right,
+                    style: SafeGoogleFont (
+                      'Rubik',
+                      fontSize: 10*ffem,
+                      fontWeight: FontWeight.w500,
+                      height: 1.185*ffem/fem,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              // frame66JC (7:171)
+              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 6*fem),
+              padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
+              width: double.infinity,
+              height: 76*fem,
+              decoration: BoxDecoration (
+                color: Color(0xffffffff),
+                borderRadius: BorderRadius.circular(16*fem),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    // group1nRv (7:172)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
+                    height: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          // accesoriesWcp (7:173)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
+                          child: Text(
+                            'Accesories',
+                            style: SafeGoogleFont (
+                              'Rubik',
+                              fontSize: 16*ffem,
+                              fontWeight: FontWeight.w500,
+                              height: 1.185*ffem/fem,
+                              color: Color(0xff000000),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          // minimumpurchaseofrs200002bA (7:174)
                           'Minimum purchase of Rs.20000',
                           style: SafeGoogleFont (
                             'Rubik',
@@ -444,7 +279,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    // offQRe (4:107)
+                    // offMdS (7:175)
                     '25% OFF',
                     textAlign: TextAlign.right,
                     style: SafeGoogleFont (
@@ -459,8 +294,8 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // frame6wwN (4:109)
-              margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 24*fem, 0*fem),
+              // frame676p (7:177)
+              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 1*fem, 6*fem),
               padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
               width: double.infinity,
               height: 76*fem,
@@ -472,14 +307,142 @@ class Scene extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // group1r2k (4:110)
+                    // group1pX2 (7:178)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 67*fem, 0*fem),
+                    height: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          // kfcyPv (7:179)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
+                          child: Text(
+                            'KFC',
+                            style: SafeGoogleFont (
+                              'Rubik',
+                              fontSize: 16*ffem,
+                              fontWeight: FontWeight.w500,
+                              height: 1.185*ffem/fem,
+                              color: Color(0xff000000),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          // minimumpurchaseofrs500hKv (7:180)
+                          'Minimum purchase of Rs.500',
+                          style: SafeGoogleFont (
+                            'Rubik',
+                            fontSize: 14*ffem,
+                            fontWeight: FontWeight.w300,
+                            height: 1.185*ffem/fem,
+                            letterSpacing: 0.28*fem,
+                            color: Color(0xff848484),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    // off1bW (7:181)
+                    '20% OFF',
+                    textAlign: TextAlign.right,
+                    style: SafeGoogleFont (
+                      'Rubik',
+                      fontSize: 10*ffem,
+                      fontWeight: FontWeight.w500,
+                      height: 1.185*ffem/fem,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              // frame6MQU (7:183)
+              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 1*fem, 6*fem),
+              padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
+              width: double.infinity,
+              height: 76*fem,
+              decoration: BoxDecoration (
+                color: Color(0xffffffff),
+                borderRadius: BorderRadius.circular(16*fem),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    // group1e8g (7:184)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
+                    height: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          // louisvuittonmyz (7:185)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
+                          child: Text(
+                            'Louis Vuitton',
+                            style: SafeGoogleFont (
+                              'Rubik',
+                              fontSize: 16*ffem,
+                              fontWeight: FontWeight.w500,
+                              height: 1.185*ffem/fem,
+                              color: Color(0xff000000),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          // minimumpurchaseofrs20000tYp (7:186)
+                          'Minimum purchase of Rs.20000',
+                          style: SafeGoogleFont (
+                            'Rubik',
+                            fontSize: 14*ffem,
+                            fontWeight: FontWeight.w300,
+                            height: 1.185*ffem/fem,
+                            letterSpacing: 0.28*fem,
+                            color: Color(0xff848484),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    // offDqz (7:187)
+                    '25% OFF',
+                    textAlign: TextAlign.right,
+                    style: SafeGoogleFont (
+                      'Rubik',
+                      fontSize: 10*ffem,
+                      fontWeight: FontWeight.w500,
+                      height: 1.185*ffem/fem,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              // frame6AmE (7:189)
+              margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 0*fem, 0*fem),
+              padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 9*fem, 16*fem),
+              width: double.infinity,
+              height: 76*fem,
+              decoration: BoxDecoration (
+                color: Color(0xffffffff),
+                borderRadius: BorderRadius.circular(16*fem),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    // group1HL4 (7:190)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 49*fem, 0*fem),
                     height: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // gucciBap (4:111)
+                          // gucciDzQ (7:191)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                           child: Text(
                             'Gucci',
@@ -493,7 +456,7 @@ class Scene extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          // minimumpurchaseofrs30000WNC (4:112)
+                          // minimumpurchaseofrs30000Ymn (7:192)
                           'Minimum purchase of Rs.30000',
                           style: SafeGoogleFont (
                             'Rubik',
@@ -508,7 +471,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    // offT2Y (4:113)
+                    // offtKr (7:193)
                     '20% OFF',
                     textAlign: TextAlign.right,
                     style: SafeGoogleFont (
