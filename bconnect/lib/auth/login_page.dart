@@ -17,22 +17,26 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'B-Connect', style: TextStyle(color: Colors.white , fontSize: 20),
+          'B-Connect',
+          style: TextStyle(color: Colors.white, fontSize: 20),
         ),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 80),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
           child: Form(
             key: _formKey,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+                const SizedBox(height: 10),
+                Image.asset("assets/b_logo.png"),
                 const SizedBox(height: 10),
                 TextFormField(
                   validator: (input) {
@@ -44,8 +48,13 @@ class _LoginPageState extends State<LoginPage> {
                   onSaved: (input) => _email = input!,
                   decoration: InputDecoration(
                     labelText: 'Email',
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: Theme.of(context).primaryColor,
+                    ),
                   ),
                 ),
+                const SizedBox(height: 10),
                 TextFormField(
                   validator: (input) {
                     if (input!.length < 6) {
@@ -55,8 +64,11 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   onSaved: (input) => _password = input!,
                   decoration: InputDecoration(
-                    labelText: 'Password',
-                  ),
+                      labelText: 'Password',
+                      prefixIcon: Icon(
+                        Icons.lock,
+                        color: Theme.of(context).primaryColor,
+                      )),
                   obscureText: true,
                 ),
                 SizedBox(
@@ -81,7 +93,9 @@ class _LoginPageState extends State<LoginPage> {
         // ignore: unused_local_variable
         UserCredential userCredential = await _auth.signInWithEmailAndPassword(
             email: _email, password: _password);
-        // ignore: use_build_context_synchronously
+
+            
+
         Navigator.pushReplacementNamed(context, '/home');
       } catch (e) {
         // ignore: avoid_print
