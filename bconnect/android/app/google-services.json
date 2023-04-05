@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522253366898",
+    "project_id": "bconnect-5410f",
+    "storage_bucket": "bconnect-5410f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522253366898:android:4693e02d750ad67d7cb4eb",
+        "android_client_info": {
+          "package_name": "com.example.bconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522253366898-mhp7akovp3lbro98a4ds8feths0fln77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZE71fNDTDVUqIXpUOwDcg793CjuzVjf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522253366898-mhp7akovp3lbro98a4ds8feths0fln77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
