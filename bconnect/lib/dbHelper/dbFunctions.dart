@@ -5,7 +5,7 @@ Future<Map<String, List<String>>> fetchOffers() async {
 
   try {
     final QuerySnapshot<Map<String, dynamic>> snapshot =
-        await FirebaseFirestore.instance.collection('offers').get();
+        await FirebaseFirestore.instance.collection('Offers').get();
 
     for (QueryDocumentSnapshot<Map<String, dynamic>> documentSnapshot
         in snapshot.docs) {
