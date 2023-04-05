@@ -80,7 +80,7 @@ class Scene extends StatelessWidget {
                     width: 24.56*fem,
                     height: 30*fem,
                     child: Image.asset(
-                      'assets/page-1/images/profile.png',
+                      'assets/pfp.png',
                       width: 24.56*fem,
                       height: 30*fem,
                     ),
@@ -183,11 +183,11 @@ class Scene extends StatelessWidget {
                               // mastercardlogonfa (1:8)
                               width: 35.53*fem,
                               height: 36.34*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/mastercardlogo.png',
-                                width: 45.53*fem,
-                                height: 36.34*fem,
-                              ),
+                              // child: Image.asset(
+                              //   'assets/page-1/images/mastercardlogo.png',
+                              //   width: 45.53*fem,
+                              //   height: 36.34*fem,
+                              // ),
                             ),
                           ],
                         ),
