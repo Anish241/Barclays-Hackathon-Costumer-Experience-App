@@ -68,16 +68,24 @@ class MyApp extends StatelessWidget {
 						),
 						Divider(height: 3.0),
 						ListTile(
-							leading: Icon(Icons.settings),
-							title: Text('Settings', style: TextStyle(fontSize: 18)),
+							leading: Icon(Icons.account_balance_wallet),
+							title: Text('Transaction History', style: TextStyle(fontSize: 18)),
 							onTap: () {
 								// Here you can give your route to navigate
 
 							},
 						),
 						ListTile(
-							leading: Icon(Icons.close),
-							title: Text('Close Drawer', style: TextStyle(fontSize: 18)),
+							leading: Icon(Icons.door_back_door),
+							title: Text('Offers', style: TextStyle(fontSize: 18)),
+							onTap: () {
+								// Here you can give your route to navigate
+
+							},
+						),
+						ListTile(
+							leading: Icon(Icons.door_back_door),
+							title: Text('Sign Out', style: TextStyle(fontSize: 18)),
 							onTap: () {
 								// Here you can give your route to navigate
 								Navigator.of(context).pop();
