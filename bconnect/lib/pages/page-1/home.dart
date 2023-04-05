@@ -1,10 +1,13 @@
+import 'package:bconnect/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Scene extends StatelessWidget {
+   
   @override
   Widget build(BuildContext context) {
     double baseWidth = 375;
@@ -22,52 +25,69 @@ class Scene extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Image.asset(
-                      //   'assets/pfp.png',
-                      //   width: 50.0,
-                      //   height: 50.0,
-                      // ),
-                      Padding(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          'Udit Rao',
-                          style: TextStyle(
-                              fontSize: 20.0, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          'Gold Tier',
-                          style: TextStyle(fontSize: 15.0),
-                        ),
-                      ),
-                    ],
+            Container(
+              // autogroupqescFRS (6XRrEDKazHvfWcnMJGQeSc)
+              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10.44*fem, 28.24*fem),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    // menuiconkd6 (1:30)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 158*fem, 16.76*fem),
+                    width: 31*fem,
+                    height: 49*fem,
+                    
                   ),
-                ),
-
-                Image.asset(
-                  'assets/wallet.png',
-                  width: 50.0,
-                  height: 50.0,
-                ),
-                SizedBox(
-                    width: 10.0), // add some space between the image and text
-                Text(
-                  'Coins: 100',
-                  style: TextStyle(fontSize: 15.0),
-                ),
-              ],
+                  Container(
+                    // userZKe (1:15)
+                    margin: EdgeInsets.fromLTRB(0*fem, 22*fem, 31*fem, 0*fem),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          // uditrao5on (1:16)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 7.76*fem),
+                          child: Text(
+                            'UDIT RAO',
+                            style: SafeGoogleFont (
+                              'Rubik',
+                              fontSize: 16*ffem,
+                              fontWeight: FontWeight.w400,
+                              height: 1.185*ffem/fem,
+                              letterSpacing: 0.32*fem,
+                              color: Color(0xff000000),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          // goldtieryXn (1:17)
+                          'Gold Tier',
+                          style: SafeGoogleFont (
+                            'Rubik',
+                            fontSize: 14*ffem,
+                            fontWeight: FontWeight.w400,
+                            height: 1.185*ffem/fem,
+                            letterSpacing: 0.28*fem,
+                            color: Color(0xff000000),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    // profileWGp (1:18)
+                    margin: EdgeInsets.fromLTRB(0*fem, 6.24*fem, 0*fem, 0*fem),
+                    width: 24.56*fem,
+                    height: 30*fem,
+                    child: Image.asset(
+                      'assets/page-1/images/profile.png',
+                      width: 24.56*fem,
+                      height: 30*fem,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          SizedBox(
-            height: 20,
-          ),
             Container(
               // group1cqe (1:4)
               margin:
@@ -110,7 +130,7 @@ class Scene extends StatelessWidget {
                             0 * fem, 0 * fem, 0 * fem, 18.16 * fem),
                         child: Text(
                           'Rs 1,23,696',
-                          style: SafeGoogleFont(
+                          style: SafeGoogleFont (
                             'Rubik',
                             fontSize: 28.3306045532 * ffem,
                             fontWeight: FontWeight.w600,
@@ -159,16 +179,16 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            // Container(
-                            //   // mastercardlogonfa (1:8)
-                            //   width: 35.53 * fem,
-                            //   height: 36.34 * fem,
-                            //   child: Image.asset(
-                            //     'assets/page-1/images/mastercardlogo.png',
-                            //     width: 45.53 * fem,
-                            //     height: 36.34 * fem,
-                            //   ),
-                            // ),
+                            Container(
+                              // mastercardlogonfa (1:8)
+                              width: 35.53*fem,
+                              height: 36.34*fem,
+                              child: Image.asset(
+                                'assets/page-1/images/mastercardlogo.png',
+                                width: 45.53*fem,
+                                height: 36.34*fem,
+                              ),
+                            ),
                           ],
                         ),
                       ),

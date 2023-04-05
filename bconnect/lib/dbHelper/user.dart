@@ -1,6 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+FirebaseFirestore firestore = FirebaseFirestore.instance;
+//get authorized user
+User? user = FirebaseAuth.instance.currentUser;
+class Userr {
 
-class User {
+  //start database service
+  
+
   final String name;
   final String email;
   final int accNo;
@@ -11,7 +18,7 @@ class User {
   final List<String> offersValidated;
   final List<String> tids;
 
-  User({
+  Userr({
     required this.name,
     required this.email,
     required this.accNo,
@@ -24,20 +31,22 @@ class User {
   });
 }
 
-Future<User?> getUserByEmail(String email) async {
+Future<Userr?> getUserByEmail(String email) async {
+  //take read write permission
+ 
   final QuerySnapshot querySnapshot = await FirebaseFirestore.instance
-      .collection('users')
+      .collection('Users')
       .where('email', isEqualTo: email)
       .get();
   if (querySnapshot.size > 0) {
     final DocumentSnapshot doc = querySnapshot.docs.first;
-    return User(
+    return Userr(
       name: doc['name'],
       email: doc['email'],
       accNo: doc['accno'],
       balance: doc['balance'],
       coins: doc['coins'],
-      tier: doc['tires'],
+      tier: doc['tiers'],
       transactionRate: doc['transaction_rate'],
       offersValidated: List<String>.from(doc['offers_validated']),
       tids: List<String>.from(doc['Tid']),
