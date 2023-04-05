@@ -15,16 +15,18 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'B-Connect', style: TextStyle(color: Colors.white , fontSize: 20),
+          'B-Connect',
+          style: TextStyle(color: Colors.white, fontSize: 20),
         ),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 80),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
           child: Form(
             key: _formKey,
             child: Column(
@@ -32,27 +34,25 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 const SizedBox(height: 10),
-                Image.asset("assets/b_logo.png"),
-                 const SizedBox(height: 10),
+                Image.asset("assets/bL.png"),
+                const SizedBox(height: 10),
                 TextFormField(
-
                   validator: (input) {
                     if (input!.isEmpty) {
                       return 'Please type an email';
                     }
                     return null;
                   },
-                  
                   onSaved: (input) => _email = input!,
                   decoration: InputDecoration(
                     labelText: 'Email',
                     prefixIcon: Icon(
-                    Icons.email,
-                    color: Theme.of(context).primaryColor,
-                  ),
+                      Icons.email,
+                      color: Theme.of(context).primaryColor,
+                    ),
                   ),
                 ),
-                 const SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextFormField(
                   validator: (input) {
                     if (input!.length < 6) {
@@ -62,13 +62,11 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   onSaved: (input) => _password = input!,
                   decoration: InputDecoration(
-                    labelText: 'Password',
-                    prefixIcon: Icon(
-                      Icons.lock,
-                      color: Theme.of(context).primaryColor,
-
-                    )
-                  ),
+                      labelText: 'Password',
+                      prefixIcon: Icon(
+                        Icons.lock,
+                        color: Theme.of(context).primaryColor,
+                      )),
                   obscureText: true,
                 ),
                 SizedBox(
