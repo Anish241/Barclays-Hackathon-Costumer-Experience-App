@@ -61,9 +61,10 @@ class HomePage extends StatelessWidget {
                         Text(
                           '${name}',
                           style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.bold, 
+                              
                               color: Colors.white,
-                              fontSize: 25.0),
+                              fontSize: 25.0),  
                         ),
                         SizedBox(height: 10.0),
                       ],
