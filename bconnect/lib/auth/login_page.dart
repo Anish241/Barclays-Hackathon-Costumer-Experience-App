@@ -32,18 +32,27 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 const SizedBox(height: 10),
+                Image.asset("assets/b_logo.png"),
+                 const SizedBox(height: 10),
                 TextFormField(
+
                   validator: (input) {
                     if (input!.isEmpty) {
                       return 'Please type an email';
                     }
                     return null;
                   },
+                  
                   onSaved: (input) => _email = input!,
                   decoration: InputDecoration(
                     labelText: 'Email',
+                    prefixIcon: Icon(
+                    Icons.email,
+                    color: Theme.of(context).primaryColor,
+                  ),
                   ),
                 ),
+                 const SizedBox(height: 10),
                 TextFormField(
                   validator: (input) {
                     if (input!.length < 6) {
@@ -54,6 +63,11 @@ class _LoginPageState extends State<LoginPage> {
                   onSaved: (input) => _password = input!,
                   decoration: InputDecoration(
                     labelText: 'Password',
+                    prefixIcon: Icon(
+                      Icons.lock,
+                      color: Theme.of(context).primaryColor,
+
+                    )
                   ),
                   obscureText: true,
                 ),
