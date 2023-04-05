@@ -33,10 +33,7 @@ class Scene extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 158*fem, 16.76*fem),
                     width: 31*fem,
                     height: 49*fem,
-                    child: Image.asset(
-                      'assets/page-1/images/menu-icon.png',
-                      fit: BoxFit.contain,
-                    ),
+                    
                   ),
                   Container(
                     // userZKe (1:15)
