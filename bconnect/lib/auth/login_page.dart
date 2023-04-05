@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 const SizedBox(height: 10),
-                Image.asset("assets/bL.png"),
+                Image.asset("assets/b_logo.png"),
                 const SizedBox(height: 10),
                 TextFormField(
                   validator: (input) {
@@ -90,6 +90,7 @@ class _LoginPageState extends State<LoginPage> {
       try {
         UserCredential userCredential = await _auth.signInWithEmailAndPassword(
             email: _email, password: _password);
+            
         Navigator.pushReplacementNamed(context, '/home');
       } catch (e) {
         print(e.toString());
