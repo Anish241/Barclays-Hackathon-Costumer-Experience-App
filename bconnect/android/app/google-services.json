@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "522253366898",
-    "project_id": "bconnect-5410f",
-    "storage_bucket": "bconnect-5410f.appspot.com"
+    "project_number": "1089656477195",
+    "project_id": "bconnect-da561",
+    "storage_bucket": "bconnect-da561.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:522253366898:android:4693e02d750ad67d7cb4eb",
+        "mobilesdk_app_id": "1:1089656477195:android:5c974d159a28b3ed13990e",
         "android_client_info": {
           "package_name": "com.example.bconnect"
         }
       },
       "oauth_client": [
         {
-          "client_id": "522253366898-mhp7akovp3lbro98a4ds8feths0fln77.apps.googleusercontent.com",
+          "client_id": "1089656477195-lpch4un0p9rnucivhae8rfhscdnvol2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bconnect",
+            "certificate_hash": "540d8109709a2fe2cd0ff882fbe938bcdb047f82"
+          }
+        },
+        {
+          "client_id": "1089656477195-t6n9uvkq9n4g9vq9drpibipcsmt8j8ah.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZE71fNDTDVUqIXpUOwDcg793CjuzVjf0"
+          "current_key": "AIzaSyCKuVtiF4OXImOhGWbuZSGBvaHXTTNHcQs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "522253366898-mhp7akovp3lbro98a4ds8feths0fln77.apps.googleusercontent.com",
+              "client_id": "1089656477195-t6n9uvkq9n4g9vq9drpibipcsmt8j8ah.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

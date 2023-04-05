@@ -1,10 +1,13 @@
+import 'package:bconnect/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Scene extends StatelessWidget {
+   
   @override
   Widget build(BuildContext context) {
     double baseWidth = 375;
@@ -45,7 +48,7 @@ class Scene extends StatelessWidget {
                           // uditrao5on (1:16)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 7.76*fem),
                           child: Text(
-                            'UDIT RAO',
+                            '${name}',
                             style: SafeGoogleFont (
                               'Rubik',
                               fontSize: 16*ffem,
@@ -58,7 +61,7 @@ class Scene extends StatelessWidget {
                         ),
                         Text(
                           // goldtieryXn (1:17)
-                          'Gold Tier',
+                          '${tier} Tier',
                           style: SafeGoogleFont (
                             'Rubik',
                             fontSize: 14*ffem,
@@ -71,17 +74,17 @@ class Scene extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
-                    // profileWGp (1:18)
-                    margin: EdgeInsets.fromLTRB(0*fem, 6.24*fem, 0*fem, 0*fem),
-                    width: 24.56*fem,
-                    height: 30*fem,
-                    child: Image.asset(
-                      'assets/page-1/images/profile.png',
-                      width: 24.56*fem,
-                      height: 30*fem,
-                    ),
-                  ),
+                  // Container(
+                  //   // profileWGp (1:18)
+                  //   margin: EdgeInsets.fromLTRB(0*fem, 6.24*fem, 0*fem, 0*fem),
+                  //   width: 24.56*fem,
+                  //   height: 30*fem,
+                  //   child: Image.asset(
+                  //     'assets/page-1/images/profile.png',
+                  //     width: 24.56*fem,
+                  //     height: 30*fem,
+                  //   ),
+                  // ),
                 ],
               ),
             ),
@@ -123,7 +126,7 @@ class Scene extends StatelessWidget {
                         // rs123696jHz (1:34)
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 18.16*fem),
                         child: Text(
-                          'Rs 1,23,696',
+                          'Rs ${balance}',
                           style: SafeGoogleFont (
                             'Rubik',
                             fontSize: 28.3306045532*ffem,
@@ -170,16 +173,16 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Container(
-                              // mastercardlogonfa (1:8)
-                              width: 35.53*fem,
-                              height: 36.34*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/mastercardlogo.png',
-                                width: 45.53*fem,
-                                height: 36.34*fem,
-                              ),
-                            ),
+                            // Container(
+                            //   // mastercardlogonfa (1:8)
+                            //   width: 35.53*fem,
+                            //   height: 36.34*fem,
+                            //   child: Image.asset(
+                            //     'assets/page-1/images/mastercardlogo.png',
+                            //     width: 45.53*fem,
+                            //     height: 36.34*fem,
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),
