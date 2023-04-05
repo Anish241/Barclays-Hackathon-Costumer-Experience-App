@@ -1,3 +1,5 @@
+import 'package:bconnect/location/geoloc.dart';
+import 'package:bconnect/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -92,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
       try {
         UserCredential userCredential = await _auth.signInWithEmailAndPassword(
             email: _email, password: _password);
-        Navigator.pushReplacementNamed(context, '/home');
+        nextScreen(context, GeoLocation());
       } catch (e) {
         print(e.toString());
       }

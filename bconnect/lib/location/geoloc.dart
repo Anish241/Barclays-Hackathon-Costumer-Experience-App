@@ -1,53 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:geolocator/geolocator.dart';
-import 'package:flutter/widgets.dart';
 
 class GeoLocation extends StatefulWidget {
-  GeoLocation({Key? key}) : super(key: key);
-
   @override
   _GeoLocationState createState() => _GeoLocationState();
 }
 
 class _GeoLocationState extends State<GeoLocation> {
-  String? _address;
-  List<dynamic>? _shops;
-
-  @override
-  void initState() {
-    super.initState();
-    _getCurrentLocation();
-  }
+  String? _location;
+  List<String>? _shops;
 
   Future<void> _getCurrentLocation() async {
-    try {
+    LocationPermission permission = await Geolocator.requestPermission();
+    if (permission == LocationPermission.denied) {
+      // Handle denied permissions
+      print('User denied permissions to access the device\'s location.');
+    } else if (permission == LocationPermission.whileInUse) {
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high);
-      await _getAddressFromLocation(position);
+      setState(() {
+        _location = '${position.latitude}, ${position.longitude}';
+      });
       await _getNearbyShops(position.latitude, position.longitude);
-    } catch (e) {
-      print(e);
     }
   }
 
-  Future<void> _getAddressFromLocation(Position position) async {
-    String url =
-        'https://nominatim.openstreetmap.org/reverse?lat=${position.latitude}&lon=${position.longitude}&format=json';
-    http.Response response = await http.get(Uri.parse(url));
-    Map<String, dynamic> data = jsonDecode(response.body);
-    setState(() {
-      _address = data['display_name'];
-    });
-  }
-
-  Future<void> _getNearbyShops(double lat, double lon) async {
-    String url =
-        'https://overpass-api.de/api/interpreter?data=[out:json];node(around:1000,$lat,$lon)[shop];out;';
-    http.Response response = await http.get(Uri.parse(url));
-    Map<String, dynamic> data = jsonDecode(response.body);
-    List<dynamic> shops = data['elements'];
+  Future<void> _getNearbyShops(double lat, double lng) async {
+    String overpassUrl = 'https://overpass-api.de/api/interpreter';
+    double radius = 1000.0; // 1km radius
+    String query = '''
+      [out:json];
+      node(around:${radius},${lat},${lng})["shop"]["name"];
+      out;
+    ''';
+    Map<String, String> headers = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    };
+    http.Response response = await http.post(
+      Uri.parse(overpassUrl),
+      headers: headers,
+      body: query,
+    );
+    List<dynamic> elements = jsonDecode(response.body)['elements'];
+    List<String> shops = elements
+        .where((element) => element['tags'] != null && element['tags']['name'] != null)
+        .map<String>((element) => element['tags']['name'])
+        .toList();
     setState(() {
       _shops = shops;
     });
@@ -57,34 +58,24 @@ class _GeoLocationState extends State<GeoLocation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Nearby Shops'),
+        title: Text('Location Demo'),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              'Your location: $_address',
-              style: TextStyle(fontSize: 16.0),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: _getCurrentLocation,
+              child: Text('Get Current Location'),
             ),
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: _shops?.length ?? 0,
-              itemBuilder: (BuildContext context, int index) {
-                dynamic shop = _shops![index];
-                String name = shop['tags']['name'];
-                String type = shop['tags']['shop'];
-                return ListTile(
-                  title: Text(name),
-                  subtitle: Text(type),
-                  trailing: Text('${shop['dist']} m'),
-                );
-              },
-            ),
-          ),
-        ],
+            SizedBox(height: 16.0),
+            Text('Location: $_location'),
+            SizedBox(height: 16.0),
+            _shops != null
+                ? Text('Nearby Shops: ${_shops!.join(", ")}')
+                : SizedBox.shrink(),
+          ],
+        ),
       ),
     );
   }
