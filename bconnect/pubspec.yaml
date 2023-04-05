@@ -37,7 +37,7 @@ dependencies:
     sdk: flutter
   geolocator: ^9.0.2
   http: ^0.13.5
-  # mongo_dart: ^0.4.4
+  mongo_dart: ^0.9.1
   shared_preferences: ^2.1.0
 
 dev_dependencies:
