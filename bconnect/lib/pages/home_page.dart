@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Udit Rao',
+                          '${name}',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
