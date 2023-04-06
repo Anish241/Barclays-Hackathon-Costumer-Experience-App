@@ -22,20 +22,27 @@ class Scene extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            ListTile(
+              leading: Icon(Icons.arrow_back),
+              title: Text(
+                'Transactions',
+                style: TextStyle(fontSize: 28),
+              ),
+            ),
             Container(
               // transactionsitg (2:68)
               margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 64*fem),
-              child: Text(
-                'Transactions',
-                style: SafeGoogleFont (
-                  'Rubik',
-                  fontSize: 28*ffem,
-                  fontWeight: FontWeight.w500,
-                  height: 1.185*ffem/fem,
-                  letterSpacing: 0.56*fem,
-                  color: Color(0xff000000),
-                ),
-              ),
+              // child: Text(
+              //   'Transactions',
+              //   style: SafeGoogleFont (
+              //     'Rubik',
+              //     fontSize: 28*ffem,
+              //     fontWeight: FontWeight.w500,
+              //     height: 1.185*ffem/fem,
+              //     letterSpacing: 0.56*fem,
+              //     color: Color(0xff000000),
+              //   ),
+              // ),
             ),
             Container(
               // frame8MRr (2:37)

@@ -23,21 +23,28 @@ class Scene extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+           
+            ListTile(
+              leading: Icon(Icons.arrow_back),
+              title: Text('Offers',style: TextStyle(fontSize: 28),),
+              
+
+            ),
             Container(
               // offersQYY (7:194)
               margin:
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 236 * fem, 47 * fem),
-              child: Text(
-                'Offers',
-                style: SafeGoogleFont(
-                  'Rubik',
-                  fontSize: 28 * ffem,
-                  fontWeight: FontWeight.w500,
-                  height: 1.185 * ffem / fem,
-                  letterSpacing: 0.56 * fem,
-                  color: Color(0xff000000),
-                ),
-              ),
+              // child: Text(
+              //   'Offers',
+              //   style: SafeGoogleFont(
+              //     'Rubik',
+              //     fontSize: 28 * ffem,
+              //     fontWeight: FontWeight.w500,
+              //     height: 1.185 * ffem / fem,
+              //     letterSpacing: 0.56 * fem,
+              //     color: Color(0xff000000),
+              //   ),
+              // ),
             ),
             FlipCard(
               fill: Fill

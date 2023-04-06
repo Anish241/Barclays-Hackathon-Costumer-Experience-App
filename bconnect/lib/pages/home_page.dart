@@ -1,32 +1,17 @@
-import 'package:bconnect/auth/login_page.dart';
-import 'package:bconnect/dbHelper/user.dart';
-import 'package:bconnect/dbHelper/dbServices.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
 import 'package:bconnect/pages/page-1/home.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:myapp/components/month.dart';
+// import 'package:myapp/components/month.dart';
 
-String email = user_email;
-Future snapshot =  DatabaseService().gettingUserData(email);
-//use shared preferences to get the email and name of the user
-//and store it in a variable
-//then use that variable to access the data
-//SharedPreferences prefs =  SharedPreferences.getInstance() as SharedPreferences;
-// String email_t = prefs.getString('email')!;
-// String name_t = prefs.getString('name')!;
-//call the function getUserByEmail() from user.dart
-//and  store the returned value in a variable
-//then use that variable to access the data
+void main() => runApp(MyApp());
 
-class HomePage extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // print(name_t);
-    // print(email_t);
     return MaterialApp(
       title: 'Flutter',
       debugShowCheckedModeBanner: false,
@@ -37,8 +22,7 @@ class HomePage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            'Bconnect',
+          title: Text('BConnect',
           ),
         ),
         drawer: Drawer(
@@ -59,12 +43,11 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          '${name}',
+                          'Udit Rao',
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, 
-                              
+                              fontWeight: FontWeight.bold,
                               color: Colors.white,
-                              fontSize: 25.0),  
+                              fontSize: 25.0),
                         ),
                         SizedBox(height: 10.0),
                       ],
@@ -73,39 +56,45 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
-						//Here you place your menu items
-						ListTile(
-							leading: Icon(Icons.home),
-							title: Text('Home Page', style: TextStyle(fontSize: 18)),
-							onTap: () {
-								// Here you can give your route to navigate
-
-							},
-						),
-						Divider(height: 3.0),
-						ListTile(
-							leading: Icon(Icons.settings),
-							title: Text('Settings', style: TextStyle(fontSize: 18)),
-							onTap: () {
-								// Here you can give your route to navigate
-
-							},
-						),
-						ListTile(
-							leading: Icon(Icons.close),
-							title: Text('Close Drawer', style: TextStyle(fontSize: 18)),
-							onTap: () {
-								// Here you can give your route to navigate
-								Navigator.of(context).pop();
-							},
-						),
-					],
-				),
-			),
-		body: SingleChildScrollView(
-			child: Scene(),
-		),
-		),
-	);
-	}
+              //Here you place your menu items
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text('Home Page', style: TextStyle(fontSize: 18)),
+                onTap: () {
+                  // Here you can give your route to navigate
+                },
+              ),
+              Divider(height: 3.0),
+              ListTile(
+                leading: Icon(Icons.account_balance_wallet),
+                title:
+                    Text('Transaction History', style: TextStyle(fontSize: 18)),
+                onTap: () {
+                  // Here you can give your route to navigate
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.card_giftcard),
+                title: Text('Offers', style: TextStyle(fontSize: 18)),
+                onTap: () {
+                  // Here you can give your route to navigate
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.door_back_door),
+                title: Text('Sign Out', style: TextStyle(fontSize: 18)),
+                onTap: () {
+                  // Here you can give your route to navigate
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Scene(),
+        ),
+      ),
+    );
+  }
 }

@@ -1,13 +1,11 @@
-import 'package:bconnect/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 
 class Scene extends StatelessWidget {
-   
   @override
   Widget build(BuildContext context) {
     double baseWidth = 375;
@@ -16,85 +14,109 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // homexQQ (1:3)
-        padding: EdgeInsets.fromLTRB(16 * fem, 23 * fem, 29 * fem, 197 * fem),
+        // homeAor (40:284)
+        padding: EdgeInsets.fromLTRB(16 * fem, 26 * fem, 29 * fem, 07 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
           color: Color(0xfff5f5f5),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              // autogroupqescFRS (6XRrEDKazHvfWcnMJGQeSc)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10.44*fem, 28.24*fem),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+              // userG88 (40:364)
+              margin:
+                  EdgeInsets.fromLTRB(19 * fem, 0 * fem, 0 * fem, 27.24 * fem),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    // menuiconkd6 (1:30)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 158*fem, 16.76*fem),
-                    width: 31*fem,
-                    height: 49*fem,
-                    
-                  ),
-                  Container(
-                    // userZKe (1:15)
-                    margin: EdgeInsets.fromLTRB(0*fem, 22*fem, 31*fem, 0*fem),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    // userG88 (40:364)
+                    margin: EdgeInsets.fromLTRB(
+                        5 * fem, 0 * fem, 0 * fem, 27.24 * fem),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
-                          // uditrao5on (1:16)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 7.76*fem),
-                          child: Text(
-                            'UDIT RAO',
-                            style: SafeGoogleFont (
-                              'Rubik',
-                              fontSize: 16*ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.185*ffem/fem,
-                              letterSpacing: 0.32*fem,
-                              color: Color(0xff000000),
-                            ),
-                          ),
-                        ),
-                        Text(
-                          // goldtieryXn (1:17)
-                          'Gold Tier',
-                          style: SafeGoogleFont (
-                            'Rubik',
-                            fontSize: 14*ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.185*ffem/fem,
-                            letterSpacing: 0.28*fem,
-                            color: Color(0xff000000),
+                          margin: EdgeInsets.fromLTRB(
+                              5 * fem, 0 * fem, 0 * fem, 27.24 * fem),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 7.76 * fem),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      'UDIT RAO',
+                                      style: SafeGoogleFont(
+                                        'Rubik',
+                                        fontSize: 16 * ffem,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.185 * ffem / fem,
+                                        letterSpacing: 0.32 * fem,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                    Text(
+                                      'Gold Tier',
+                                      style: SafeGoogleFont(
+                                        'Rubik',
+                                        fontSize: 12 * ffem,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.185 * ffem / fem,
+                                        letterSpacing: 0.32 * fem,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                  width:
+                                      10.0), // add some space between the image and text
+
+                              SizedBox(
+                                  width:
+                                      90.0), // add some space between the text and image
+                              Image.asset(
+                                'assets/wallet.png',
+                                width: 48 * fem,
+                                height: 48 * fem,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  color: Color(0xffF5F5F5),
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 12.0 * fem,
+                                    vertical: 8.0 * fem),
+                                child: Text(
+                                  'Coins: 1000',
+                                  style: TextStyle(fontSize: 12.0),
+                                ),
+                              ),
+                              SizedBox(
+                                  width:
+                                      10.0), // add some space on the right side of the image
+                            ],
                           ),
                         ),
                       ],
-                    ),
-                  ),
-                  Container(
-                    // profileWGp (1:18)
-                    margin: EdgeInsets.fromLTRB(0*fem, 6.24*fem, 0*fem, 0*fem),
-                    width: 24.56*fem,
-                    height: 30*fem,
-                    child: Image.asset(
-                      'assets/pfp.png',
-                      width: 24.56*fem,
-                      height: 30*fem,
                     ),
                   ),
                 ],
               ),
             ),
             Container(
-              // group1cqe (1:4)
+              // group1Yzk (206:9)
               margin:
-                  EdgeInsets.fromLTRB(13.11 * fem, 0 * fem, 0 * fem, 38 * fem),
+                  EdgeInsets.fromLTRB(6 * fem, 0 * fem, 12.89 * fem, 48 * fem),
               padding: EdgeInsets.fromLTRB(
                   23 * fem, 27.47 * fem, 19.62 * fem, 22.38 * fem),
-              width: 311.11 * fem,
+              width: double.infinity,
               decoration: BoxDecoration(
                 color: Color(0xd81d242b),
                 borderRadius: BorderRadius.circular(16.2523975372 * fem),
@@ -110,7 +132,7 @@ class Scene extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        // currentbalanceqCc (1:14)
+                        // currentbalancemMi (206:20)
                         margin: EdgeInsets.fromLTRB(
                             0.07 * fem, 0 * fem, 0 * fem, 8.53 * fem),
                         child: Text(
@@ -125,12 +147,12 @@ class Scene extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // rs123696jHz (1:34)
+                        // rs123696GJU (210:119)
                         margin: EdgeInsets.fromLTRB(
                             0 * fem, 0 * fem, 0 * fem, 18.16 * fem),
                         child: Text(
                           'Rs 1,23,696',
-                          style: SafeGoogleFont (
+                          style: SafeGoogleFont(
                             'Rubik',
                             fontSize: 28.3306045532 * ffem,
                             fontWeight: FontWeight.w600,
@@ -140,7 +162,7 @@ class Scene extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // SiC (1:7)
+                        // wvQ (206:12)
                         margin: EdgeInsets.fromLTRB(
                             1.42 * fem, 0 * fem, 0 * fem, 16.12 * fem),
                         child: Text(
@@ -156,7 +178,7 @@ class Scene extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // autogroupi2i4kyn (6XRraY54EG3EHMRxZ2i2i4)
+                        // autogroup5ywnr1n (G6Gzer6gH3HRk7smqD5ywn)
                         margin: EdgeInsets.fromLTRB(
                             1.42 * fem, 0 * fem, 0 * fem, 0 * fem),
                         width: double.infinity,
@@ -164,7 +186,7 @@ class Scene extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              // t4Q (1:6)
+                              // muS (206:11)
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 4.27 * fem, 165.54 * fem, 0 * fem),
                               child: Text(
@@ -179,17 +201,12 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Container(
-                              // mastercardlogonfa (1:8)
-                              width: 35.53*fem,
-                              //aa
-                              height: 36.34*fem,
-                              // child: Image.asset(
-                              //   'assets/page-1/images/mastercardlogo.png',
-                              //   width: 45.53*fem,
-                              //   height: 36.34*fem,
-                              // ),
-                            ),
+                            // Container(
+                            //   // mastercardlogoKpU (206:13)
+                            //   width: 45.53 * fem,
+                            //   height: 36.34 * fem,
+
+                            // ),
                           ],
                         ),
                       ),
@@ -198,6 +215,7 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
+
             InkWell(
               onTap: () {
                 // handle the click event for Check Balance button
@@ -225,7 +243,91 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            // Container(
+            
+            InkWell(
+              onTap: () {
+                // handle the click event for Check Balance button
+              },
+              child: Container(
+                // frame12xyN (1:21)
+                margin:
+                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 29 * fem),
+                padding:
+                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
+                width: 327 * fem,
+                decoration: BoxDecoration(
+                  color: Color(0xffffffff),
+                  borderRadius: BorderRadius.circular(16 * fem),
+                ),
+                child: Text(
+                  'Check Balance',
+                  style: SafeGoogleFont(
+                    'Rubik',
+                    fontSize: 16 * ffem,
+                    fontWeight: FontWeight.w500,
+                    height: 1.185 * ffem / fem,
+                    color: Color(0xff000000),
+                  ),
+                ),
+              ),
+            ),
+            
+            InkWell(
+              onTap: () {
+                // handle the click event for Check Balance button
+              },
+              child: Container(
+                // frame12xyN (1:21)
+                margin:
+                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 29 * fem),
+                padding:
+                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
+                width: 327 * fem,
+                decoration: BoxDecoration(
+                  color: Color(0xffffffff),
+                  borderRadius: BorderRadius.circular(16 * fem),
+                ),
+                child: Text(
+                  'Transaction History',
+                  style: SafeGoogleFont(
+                    'Rubik',
+                    fontSize: 16 * ffem,
+                    fontWeight: FontWeight.w500,
+                    height: 1.185 * ffem / fem,
+                    color: Color(0xff000000),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                // handle the click event for Offers Nearby button
+              },
+              child: Container(
+                // frame14Rc4 (1:24)
+                margin:
+                    EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 29 * fem),
+                padding:
+                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
+                width: 327 * fem,
+                decoration: BoxDecoration(
+                  color: Color(0xffffffff),
+                  borderRadius: BorderRadius.circular(16 * fem),
+                ),
+                child: Text(
+                  'My Rewards',
+                  style: SafeGoogleFont(
+                    'Rubik',
+                    fontSize: 16 * ffem,
+                    fontWeight: FontWeight.w500,
+                    height: 1.185 * ffem / fem,
+                    color: Color(0xff000000),
+                  ),
+                ),
+              ),
+            ),
+
+// Container(
 
             //   // frame15iJL (1:31)
             //   //margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 28*fem),
@@ -270,87 +372,6 @@ class Scene extends StatelessWidget {
             //   //   ),
             //   // ),
             // ),
-            InkWell(
-              onTap: () {
-                // handle the click event for Check Balance button
-              },
-              child: Container(
-                // frame12xyN (1:21)
-                margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 29 * fem),
-                padding:
-                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
-                width: 327 * fem,
-                decoration: BoxDecoration(
-                  color: Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(16 * fem),
-                ),
-                child: Text(
-                  'Check Balance',
-                  style: SafeGoogleFont(
-                    'Rubik',
-                    fontSize: 16 * ffem,
-                    fontWeight: FontWeight.w500,
-                    height: 1.185 * ffem / fem,
-                    color: Color(0xff000000),
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                // handle the click event for Check Balance button
-              },
-              child: Container(
-                // frame12xyN (1:21)
-                margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 29 * fem),
-                padding:
-                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
-                width: 327 * fem,
-                decoration: BoxDecoration(
-                  color: Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(16 * fem),
-                ),
-                child: Text(
-                  'Offers Nearby',
-                  style: SafeGoogleFont(
-                    'Rubik',
-                    fontSize: 16 * ffem,
-                    fontWeight: FontWeight.w500,
-                    height: 1.185 * ffem / fem,
-                    color: Color(0xff000000),
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                // handle the click event for Check Balance button
-              },
-              child: Container(
-                // frame12xyN (1:21)
-                margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 3 * fem, 29 * fem),
-                padding:
-                    EdgeInsets.fromLTRB(16 * fem, 16 * fem, 16 * fem, 16 * fem),
-                width: 327 * fem,
-                decoration: BoxDecoration(
-                  color: Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(16 * fem),
-                ),
-                child: Text(
-                  'Transaction History',
-                  style: SafeGoogleFont(
-                    'Rubik',
-                    fontSize: 16 * ffem,
-                    fontWeight: FontWeight.w500,
-                    height: 1.185 * ffem / fem,
-                    color: Color(0xff000000),
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),
