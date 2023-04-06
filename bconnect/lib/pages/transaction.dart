@@ -5,9 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
 import 'package:bconnect/pages/page-1/transaction-history.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+
+class Transactionss extends StatelessWidget {
 	@override
 	Widget build(BuildContext context) {
 	return MaterialApp(

@@ -3,6 +3,7 @@
 import 'package:bconnect/dbHelper/dbServices.dart';
 import 'package:bconnect/dbHelper/user.dart';
 import 'package:bconnect/pages/home_page.dart';
+import 'package:bconnect/pages/page-1/home.dart';
 import 'package:bconnect/widgets/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ String user_email = '';
 String name = '';
 int balance = 0;
 String tier = '';
+
 
 Future<Userr?> user = getUserByEmail(user_email);
 

@@ -1,11 +1,14 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:geolocator/geolocator.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
 
-class Scene extends StatelessWidget {
+class Off extends StatelessWidget {
+  //randomize an integer between 1 and 3
+  int randomInt = 1 + (new DateTime.now().millisecondsSinceEpoch % 3);
   @override
   Widget build(BuildContext context) {
     double baseWidth = 375;
@@ -23,21 +26,28 @@ class Scene extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+           
+            ListTile(
+              leading: Icon(Icons.arrow_back),
+              title: Text('Offers',style: TextStyle(fontSize: 28),),
+              
+
+            ),
             Container(
               // offersQYY (7:194)
               margin:
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 236 * fem, 47 * fem),
-              child: Text(
-                'Offers',
-                style: SafeGoogleFont(
-                  'Rubik',
-                  fontSize: 28 * ffem,
-                  fontWeight: FontWeight.w500,
-                  height: 1.185 * ffem / fem,
-                  letterSpacing: 0.56 * fem,
-                  color: Color(0xff000000),
-                ),
-              ),
+              // child: Text(
+              //   'Offers',
+              //   style: SafeGoogleFont(
+              //     'Rubik',
+              //     fontSize: 28 * ffem,
+              //     fontWeight: FontWeight.w500,
+              //     height: 1.185 * ffem / fem,
+              //     letterSpacing: 0.56 * fem,
+              //     color: Color(0xff000000),
+              //   ),
+              // ),
             ),
             FlipCard(
               fill: Fill
@@ -104,7 +114,7 @@ class Scene extends StatelessWidget {
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -204,7 +214,7 @@ class Scene extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 8 * fem),
                               child: Text(
-                                'McDonald\'s',
+                                'ZARA\'s',
                                 style: SafeGoogleFont(
                                   'Rubik',
                                   fontSize: 16 * ffem,
@@ -216,7 +226,7 @@ class Scene extends StatelessWidget {
                             ),
                             Text(
                               // minimumpurchaseofrs300J3a (7:156)
-                              'Minimum purchase of Rs.300',
+                              'Minimum purchase of Rs.1300',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 14 * ffem,
@@ -231,11 +241,11 @@ class Scene extends StatelessWidget {
                       ),
                       Text(
                         // offom2 (7:157)
-                        '10% OFF',
+                        '15% OFF',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -272,7 +282,7 @@ class Scene extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(
                                 0 * fem, 0 * fem, 0 * fem, 8 * fem),
                             child: Text(
-                              '12345aSD\'s',
+                              '78910aSD\'s',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 16 * ffem,
@@ -335,7 +345,7 @@ class Scene extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 8 * fem),
                               child: Text(
-                                'McDonald\'s',
+                                'H & M\'s',
                                 style: SafeGoogleFont(
                                   'Rubik',
                                   fontSize: 16 * ffem,
@@ -347,7 +357,7 @@ class Scene extends StatelessWidget {
                             ),
                             Text(
                               // minimumpurchaseofrs300J3a (7:156)
-                              'Minimum purchase of Rs.300',
+                              'Minimum purchase of Rs.2000',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 14 * ffem,
@@ -362,11 +372,11 @@ class Scene extends StatelessWidget {
                       ),
                       Text(
                         // offom2 (7:157)
-                        '10% OFF',
+                        '20% OFF',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -403,7 +413,7 @@ class Scene extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(
                                 0 * fem, 0 * fem, 0 * fem, 8 * fem),
                             child: Text(
-                              '12345aSD\'s',
+                              '11111aSD\'s',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 16 * ffem,
@@ -466,7 +476,7 @@ class Scene extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 8 * fem),
                               child: Text(
-                                'McDonald\'s',
+                                'Subway\'s',
                                 style: SafeGoogleFont(
                                   'Rubik',
                                   fontSize: 16 * ffem,
@@ -478,7 +488,7 @@ class Scene extends StatelessWidget {
                             ),
                             Text(
                               // minimumpurchaseofrs300J3a (7:156)
-                              'Minimum purchase of Rs.300',
+                              'Minimum purchase of Rs.400',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 14 * ffem,
@@ -493,11 +503,11 @@ class Scene extends StatelessWidget {
                       ),
                       Text(
                         // offom2 (7:157)
-                        '10% OFF',
+                        '  8% OFF',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -534,7 +544,7 @@ class Scene extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(
                                 0 * fem, 0 * fem, 0 * fem, 8 * fem),
                             child: Text(
-                              '12345aSD\'s',
+                              '4016aSD\'s',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 16 * ffem,
@@ -597,7 +607,7 @@ class Scene extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 8 * fem),
                               child: Text(
-                                'McDonald\'s',
+                                'SUGAR',
                                 style: SafeGoogleFont(
                                   'Rubik',
                                   fontSize: 16 * ffem,
@@ -609,7 +619,7 @@ class Scene extends StatelessWidget {
                             ),
                             Text(
                               // minimumpurchaseofrs300J3a (7:156)
-                              'Minimum purchase of Rs.300',
+                              'Minimum purchase of Rs.2300',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 14 * ffem,
@@ -624,11 +634,11 @@ class Scene extends StatelessWidget {
                       ),
                       Text(
                         // offom2 (7:157)
-                        '10% OFF',
+                        '25% OFF',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -665,7 +675,7 @@ class Scene extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(
                                 0 * fem, 0 * fem, 0 * fem, 8 * fem),
                             child: Text(
-                              '12345aSD\'s',
+                              '4678aSD\'s',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 16 * ffem,
@@ -728,7 +738,7 @@ class Scene extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 0 * fem, 8 * fem),
                               child: Text(
-                                'McDonald\'s',
+                                'Boat',
                                 style: SafeGoogleFont(
                                   'Rubik',
                                   fontSize: 16 * ffem,
@@ -740,7 +750,7 @@ class Scene extends StatelessWidget {
                             ),
                             Text(
                               // minimumpurchaseofrs300J3a (7:156)
-                              'Minimum purchase of Rs.300',
+                              'Minimum purchase of Rs.5000',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 14 * ffem,
@@ -755,11 +765,11 @@ class Scene extends StatelessWidget {
                       ),
                       Text(
                         // offom2 (7:157)
-                        '10% OFF',
+                        '25% OFF',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont(
                           'Rubik',
-                          fontSize: 10 * ffem,
+                          fontSize: 9 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.185 * ffem / fem,
                           color: Color(0xff000000),
@@ -796,7 +806,7 @@ class Scene extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(
                                 0 * fem, 0 * fem, 0 * fem, 8 * fem),
                             child: Text(
-                              '12345aSD\'s',
+                              '9898aSD\'s',
                               style: SafeGoogleFont(
                                 'Rubik',
                                 fontSize: 16 * ffem,

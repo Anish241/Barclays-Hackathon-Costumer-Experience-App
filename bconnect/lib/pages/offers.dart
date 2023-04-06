@@ -5,9 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:bconnect/pages/utils.dart';
 import 'package:bconnect/pages/page-1/offers.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+
+class Offers extends StatelessWidget {
+  
 	@override
 	Widget build(BuildContext context) {
 	return MaterialApp(
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: Scaffold(
 		body: SingleChildScrollView(
-			child: Scene(),
+			child: Off(),
 		),
 		),
 	);
